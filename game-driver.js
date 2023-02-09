@@ -2,6 +2,7 @@ var GameDriver = (function () {
 
     return {
         init: function () {
+            cc.log("init qc socket");
             var QC_ClientId = cc.sys.localStorage.getItem("QC_ClientId");
             // var ws = new WebSocket('ws://localhost:3000');
             var ws = new WebSocket('ws://192.168.56.1:3000');
